@@ -47,6 +47,15 @@ Kelola Berita
                             </div>
                         </div>
                     </div>
+                    <div class="row">
+                        {{-- Input Gambar --}}
+                        <div class="col-12">
+                            <div class="mb-3">
+                              <label class="form-label">Edit Gambar</label>
+                              <input class="form-control" type="file" id="formFile"> 
+                            </div>
+                        </div>
+                    </div>
 
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>

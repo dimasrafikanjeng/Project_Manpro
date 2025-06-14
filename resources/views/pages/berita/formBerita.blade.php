@@ -52,7 +52,7 @@ Kelola Berita
                         <div class="col-12">
                             <div class="mb-3">
                               <label class="form-label">Upload Gambar</label>
-                              <input class="form-control" type="file" id="formFile" disabled> 
+                              <input class="form-control" type="file" id="formFile"> 
                             </div>
                         </div>
                     </div>

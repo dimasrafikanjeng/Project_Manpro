@@ -40,7 +40,7 @@ Kelola Berita
                       </tr>
                       <tr>
                         <th style="white-space:nowrap; width:1%" scope="row">Gambar</th>
-                        <td>:   -</td>
+                        <td>:    {{$berita->formFile}}</td>
                       </tr>
                     </tbody>
                 </table>

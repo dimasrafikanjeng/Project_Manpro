@@ -19,5 +19,11 @@
             <span>Home</span>
         </a>
     </li>
+    <li class="nav-item">
+    <a class="nav-link" href="/login">
+        <i class="fas fa-clipboard-list"></i>
+        <span>Presensi Mentee</span>
+    </a>
+</li>
 
 </ul>

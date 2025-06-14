@@ -1,7 +1,7 @@
 <footer class="sticky-footer bg-white">
     <div class="container my-auto">
         <div class="copyright text-center my-auto">
-            <span>Copyright &copy; BKPK STT NF 2022</span>
+            <span>Copyright &copy; BKPK STT NF 2025</span>
         </div>
     </div>
 </footer>

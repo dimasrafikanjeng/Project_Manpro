@@ -5,7 +5,7 @@
         <div class="sidebar-brand-icon logo-sidebar">
             <img class="logo-sidebar" src="{{asset('template/img/bkpk-w.png')}}"/>
         </div>
-        <div class="sidebar-brand-text mx-3">MENTORIS<br><span class="small">BKPK STT-NF</span></div>
+        <div class="sidebar-brand-text mx-3">MENTORIZ<br><span class="small">BKPK STT-NF</span></div>
     </a>
 
     <!-- Divider -->
