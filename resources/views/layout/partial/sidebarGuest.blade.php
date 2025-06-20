@@ -11,7 +11,7 @@
     <!-- Divider -->
     <hr class="sidebar-divider my-0">
 
-    
+
     <!-- Nav Item - Dashboard -->
     <li class="nav-item">
         <a class="nav-link" href="/">
@@ -20,7 +20,7 @@
         </a>
     </li>
     <li class="nav-item">
-    <a class="nav-link" href="/login">
+    <a class="nav-link" href="/presensi">
         <i class="fas fa-clipboard-list"></i>
         <span>Presensi Mentee</span>
     </a>

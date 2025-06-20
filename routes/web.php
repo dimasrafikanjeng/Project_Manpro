@@ -9,6 +9,7 @@ use App\Http\Controllers\PresensiController;
 use App\Http\Controllers\PresensiMentorController;
 use App\Http\Controllers\BeritaController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\AbsensiController;
 use Illuminate\Support\Facades\Auth;
 use App\Models\Berita;
 
@@ -22,6 +23,14 @@ use App\Models\Berita;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+
+
+Route::get('/absensi/create', [AbsensiController::class, 'create'])->name('absensi.create');
+Route::post('/absensi', [AbsensiController::class, 'store'])->name('absensi.store');
+
+
+
 
 
 Route::middleware(['auth', 'admin'])->group(function () {
@@ -39,10 +48,10 @@ Route::middleware(['auth'])->group(function () {
     //CRU Presensi
     Route::resource('presensi', PresensiController::class);
     Route::get('/presensi/export_excel', 'PresensiController@export_excel');
-    
+
     //CRU Presensi by mentor
     Route::get('/presensi-kelompok', [PresensiMentorController::class, 'view']);
-    
+
     Route::get('/presensi-kelompok/{id}/create', [PresensiMentorController::class, 'create']);
 
     Route::get('/presensi-kelompok/{id}/lihat', [PresensiMentorController::class, 'show']);
@@ -55,20 +64,25 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/profile', [LandingController::class, 'profile']);
 
     Route::get('/profile/edit', [LandingController::class, 'edit']);
-    
+
     Route::put('/profile/{id}', [LandingController::class, 'update']);
 
     Route::get('/profile/change-password', [LandingController::class, 'editPassword']);
-    
+
     Route::put('/profile/change-password/{id}', [LandingController::class, 'updatePassword']);
-    
-    Route::get('/dashboard', [LandingController::class, 'dashboard']); 
+
+    Route::get('/dashboard', [LandingController::class, 'dashboard']);
 });
 
 // Route Frontend (ditambah Berita)
 Route::get('/', function () {
     return view('home',[
         "dataBerita" => Berita::all()
+    ]);
+});
+Route::get('/absen', function () {
+    return view('home',[
+
     ]);
 });
 
